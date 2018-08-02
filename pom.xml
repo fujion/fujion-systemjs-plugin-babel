@@ -9,7 +9,7 @@
 
 	<name>SystemJS Babel Transpiler Plugin</name>
 	<artifactId>webjar-systemjs-plugin-babel</artifactId>
-	<version>0.0.25-SNAPSHOT</version>
+	<version>0.0.25</version>
 	<description>SystemJS Babel transpiler plugin.</description>
 
 	<properties>
@@ -35,10 +35,10 @@
 						<id>precompile</id>
 						<configuration>
 							<target>
-								<get src="${src.url}" dest="${src.zipdir}/src.zip"/>
+								<get src="${src.url}" dest="${src.zipdir}/src.zip" />
 								<unzip src="${src.zipdir}/src.zip" dest="${src.tmpdir}" />
 								<move todir="${webjar.target}">
-									<fileset dir="${src.rootdir}" includes="*.js,LICENSE,README.md"/>
+									<fileset dir="${src.rootdir}" includes="*.js,LICENSE,README.md" />
 								</move>
 							</target>
 						</configuration>
@@ -61,4 +61,8 @@
 	        </plugin>
 		</plugins>
 	</build>
+
+  <scm>
+    <tag>0.0.25</tag>
+  </scm>
 </project>
