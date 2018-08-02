@@ -1,2 +1,3 @@
-# fujion-systemjs-plugin-babel
-Web jar for https://github.com/systemjs/plugin-babel.
+# webjar-systemjs-plugin-babel
+Web jar for plugin-babel.
+https://github.com/systemjs/plugin-babel
