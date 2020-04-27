@@ -15,15 +15,6 @@
 	<properties>
 		<src.url>https://github.com/systemjs/plugin-babel/archive/${src.version}.zip</src.url>
 		<src.top>plugin-babel-${src.version}</src.top>
-		<systemjs>
-			{
-				"paths": {
-					"systemjs-plugin-babel": "plugin-babel.js",
-					"systemjs-babel-build": "systemjs-babel-browser.js"
-				},
-				"transpiler": "systemjs-plugin-babel"
-			}			
-		</systemjs>
 	</properties>
 	
 	<build>
@@ -37,9 +28,9 @@
 							<target>
 								<get src="${src.url}" dest="${src.zipdir}/src.zip" />
 								<unzip src="${src.zipdir}/src.zip" dest="${src.tmpdir}" />
-								<move todir="${webjar.target}">
+								<copy todir="${webjar.target}">
 									<fileset dir="${src.rootdir}" includes="*.js,LICENSE,README.md" />
-								</move>
+								</copy>
 							</target>
 						</configuration>
 					</execution>
