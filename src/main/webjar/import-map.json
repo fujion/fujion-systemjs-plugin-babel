@@ -1,7 +1,7 @@
 {
   "paths": {
-    "systemjs-plugin-babel": "plugin-babel.js",
-    "systemjs-babel-build": "systemjs-babel-browser.js"
+    "systemjs-plugin-babel": "dist/plugin-babel.js",
+    "systemjs-babel-build": "dist/systemjs-babel-browser.js"
   },
   "transpiler": "systemjs-plugin-babel"
 }
