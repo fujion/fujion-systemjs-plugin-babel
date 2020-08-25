@@ -4,12 +4,12 @@
 	<parent>
 		<groupId>org.fujion.webjars</groupId>
 		<artifactId>fujion-webjars</artifactId>
-		<version>3.0.0-SNAPSHOT</version>
+		<version>3.0.0</version>
 	</parent>
 
 	<name>SystemJS Babel Transpiler Plugin</name>
 	<artifactId>webjar-systemjs-plugin-babel</artifactId>
-	<version>0.0.25-1-SNAPSHOT</version>
+	<version>0.0.25-1</version>
 	<description>SystemJS Babel transpiler plugin.</description>
 
 	<build>
